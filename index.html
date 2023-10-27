@@ -6,6 +6,7 @@
         <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style type="text/css" media="all">
             body {
                 margin: 0;
@@ -24,7 +25,7 @@
                 justify-content: space-between;
             }
             .navbar > a > img {
-                width: 300px;
+                width: 85%;
             }
             .navbar > .links {
                 align-self: center;
@@ -32,11 +33,11 @@
             .navbar > .links > a {
                 color: #ffffff;
                 margin: 8px;
-                font-size: 20px;
-                text-decoration: 1.2px underline #ff8c00;
+                font-size: 1.2rem;
+                text-decoration: 1.5px underline #ff8c00;
             }
             .navbar > .links > a:hover {
-                text-decoration-thickness: 3px;
+                text-decoration-thickness: 3.5px;
             }
             
             .main {
@@ -88,6 +89,10 @@
             }
             
             @media screen and (max-width: 1026px) {
+                .container {
+                    height: fit-content;
+                    width: 100%;
+                }
                 .navbar {
                     display: flex;
                     background: #000000;
@@ -95,7 +100,7 @@
                     justify-content: space-between;
                 }
                 .navbar > a > img {
-                    width: 250px;
+                    width: 75%;
                 }
                 .navbar > .links {
                     align-self: center;
@@ -103,11 +108,11 @@
                 .navbar > .links > a {
                     color: #ffffff;
                     margin: 4px;
-                    font-size: 16px;
-                    text-decoration: 1.2px underline #ff8c00;
+                    font-size: 0.77rem;
+                    text-decoration: 1.5px underline #ff8c00;
                 }
                 .navbar > .links > a:hover {
-                    text-decoration-thickness: 3px;
+                    text-decoration-thickness: 3.5px;
                 }
                 
                 .main {
@@ -169,12 +174,15 @@
                 .navbar {
                     display: flex;
                     background: #000000;
-                    padding: 25px;
+                    padding: 20px;
                     justify-content: space-between;
+                }
+                .navbar > a {
+                    width: fit-content;
                 }
                 .navbar > a > img {
                     padding: 0;
-                    width: 300px;
+                    width: 60%;
                 }
                 .navbar > .links {
                     display: none;
@@ -184,12 +192,12 @@
                     color: #ffffff;
                     background: none;
                     border: none;
-                    font-size: 25px;
+                    font-size: 110%;
                     cursor: pointer;
                 }
                 .links-sidebar {
                     background: #000000;
-                    width: 95%;
+                    width: 90%;
                     justify-content: center;
                     align-self: center;
                     border-radius: 0 0 16px 16px;
@@ -198,11 +206,12 @@
                     width: 100%;
                     list-style: none;
                     color: #ffffff;
-                    font-size: 16px;
-                    text-decoration: 1.2px underline #ff8c00;
+                    margin: 4px;
+                    font-size: 1.2rem;
+                    text-decoration: 1.5px underline #ff8c00;
                 }
                 .links-sidebar > ul > li > a:hover {
-                    text-decoration-thickness: 3px;
+                    text-decoration-thickness: 3.5px;
                 }
                 
                 .main {
@@ -246,11 +255,6 @@
         
     </head>
     <body>
-        <script type="text/javascript" charset="utf-8">
-            function btn_open() {
-                document.getElementsByClassName("links-sidebar")[0].style.display = "flex";
-            }
-        </script>
         <div class="container">
             <div class="navbar">
                 <a href="#logo"><img src="https://i.ibb.co/3m7Xr45/event-apart-removebg-preview.png" border="0"></a>
@@ -291,6 +295,10 @@
                 <h1>Take the next step. Join us live or <span>on demand</span></h1>
             </div>
         </div>
-        
+        <script type="text/javascript" charset="utf-8">
+            function btn_open() {
+                document.getElementsByClassName("links-sidebar")[0].style.display = "flex";
+            }
+        </script>
     </body>
 </html>
