@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An Event Apart</title>
+        <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+        <link href='https://fonts.googleapis.com/css?family=Alkalami' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="#logo"><img src="https://i.ibb.co/3m7Xr45/event-apart-removebg-preview.png" border="0"></a>
+                <div class="links">
+                    <a href="#speakers">Speakers</a>
+                    <a href="#findanevent">Find an Event</a>
+                    <a href="#whyattend">Why Attend?</a>
+                    <a href="#registration">Registration Info</a>
+                    <a href="#registernow">Register Now!</a>
+                    <a href="#news">News</a>
+                </div>
+                
+                <button class="side-btn-toggle" type="button"><i class="fa-solid">&#xf0c9;</i></button>
+            </div>
+            
+            <div class="links-sidebar">
+                <ul>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#findanevent">Find an Event</a></li>
+                    <li><a href="#whyattend">Why Attend?</a></li>
+                    <li><a href="#registration">Registration Info</a></li>
+                    <li><a href="#registernow">Register Now!</a></li>
+                    <li><a href="#news">News</a></li>
+                </ul>
+            </div>
+            
+            <div class="main">
+                <h1>Fall Summit</h1>
+                
+                <p>An (online!) web design conference <i>for</i> ux & front-end experts</p>
+                
+                <h3>October 26-28, 2020</h3>
+                
+                <button type="button">Learn More</button>
+            </div>
+            
+            <div class="footer">
+                <h1>Take the next step. Join us live or <span>on demand</span></h1>
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8">
+                let menu = false;
+                const linksSideBar = document.querySelector('.links-sidebar');
+                const toggle = document.querySelector('.side-btn-toggle');
+                
+                toggle.addEventListener('click', () => {
+                    menu = !menu;
+                    linksSideBar.style.display = menu ? 'flex' : 'none';
+                    toggle.innerHTML = menu ? '<i class="fa-solid">&#xf00d;</i>' : '<i class="fa-solid">&#xf0c9;</i>';
+                });
+        </script>
+    </body>
+</html>
